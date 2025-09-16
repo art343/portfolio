@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Try Baskerville, Helvetica, and Birch</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="links/favicon.ico?" >
+<meta name="viewport" content="width=device-width">	
+<meta name="viewport" content="width=device-width">
+<style>	
+	body {
+	}
+/* BELOW : Flex css */	
+  .container {
+    margin: 0 auto;
+	min-width: 375px;  
+    max-width: 1280px;
+    padding: 0 1rem;
+  }
+  .responsive-image {
+    max-width: 100%;
+  }
+  .cell {
+    margin: .5rem;
+  }	
+  .cell img {
+    display: block;
+  }
+
+/* BELOW : Flex css, Media queries */		
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(50% - 1rem);  
+  }
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(25% - 1rem);	  }
+  }
+
+/* BELOW : Overlay */		
+  .orange {
+  	position: relative;
+  }
+
+  .image {
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  }
+  .overlay {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+	  -webkit-border-radius: 400px; /* This makes the circle */
+      -moz-border-radius: 400px;
+      border-radius: 400px;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .5s ease;
+  	background-color: #f47521;
+  }
+
+  .orange:hover .overlay {
+  	opacity: 1;
+  }
+
+.text {
+  color: white;
+  font-family: "source-sans-pro", "Helvetica Neue", "sans-serif";
+  font-size: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width:667px){
+	div.container {
+		display: none;
+	}
+}
+</style>
+	
+</head>
+
+<body>
+	<div id="wrapper" style="background-color: white;">
+		<header><img src="links/logo.png" height="35" align="right" alt=""/></header>
+			<nav>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active" style="color: white;">So far</a>
+  <a href="books.html">Books, interiors</a>
+  <a href="design.html">Print, web</a>
+  <a href="brand.html">Brand, advertising</a>	 	
+  <a href="photo.html">Photography</a>
+  <a href="contact.html">Say hello</a>	
+
+	
+<!--Begin Javascript -->		
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+<!--End Javascript -->	
+	</div><!--Closes the nav-->
+		</nav>
+<main>
+    
+<p class="summaryhead" style="text-indent: -.065em;">My name is Rick. I design book jackets, books, magazines, logos, and print-related ephemera; but I spend most of my day in the classroom.</p>
+
+<p>I've been working in the graphic arts and design for awhile now. I'll share some pieces of the work I made, tried to make, iterations I tried to push onto clients, and opinions I've formed about the graphic arts.</p>	
+
+    
+	<p>In college, I drew Univers type at about 14 points for my <b>Intro to Typography</b> class at Cal State. That was hard. Later, I used Letraset&reg; press-on type, which was tedious, but satisfying to see dark type on a page. I do, however, tend to make a lot of typsos. That same year, my cohort of art students transitioned to typesetting via Photoshop. This corresponded with the emergence of the <em>Grunge</em> movement in typography. My <em>International Style</em>-oriented instructors frowned at the reckless application of type, but to me— it was dynamic, new, and fresh.</p>
+	
+	<p>The instructors were predictably right. The principles that <em>International Style</em> espouses are rock-solid and hard to fuck up: Clarity, organization, application of a grid, and legibility are always keen adjectives to a well-designed page, screen, product.</p> 
+	
+	<p>But the late 80s (beginning with work being produced in Califonia) and stretching to the 90s was just so wildly different. It allowed for a more expressive quality to emerge from the Swiss-style. Paraphrasing David Carson— Just because it’s clear, doesn’t mean it communicates.</p>
+	
+	<p>I think there’s merit to a wide array of solutions and styles, and the solutions should be content-driven. The grunge aesthetic, while not always appropriate, brought with it a rich, dense, painterly-composition to page-layouts that when applied-well, is just really beautiful.</p>
+	
+	<p>These days, <em>grunge</em> just communicates ‘90s’ and is hard to read. Conundrum.</p>
+	
+	<p><em>Anyway, this site represents the areas of design I've spent time with:</em> Print, web, publication, advertising, and other allied-areas of visual practice. Some are the final design as they went out into the world, some are unused-iterations, others are personal endeavours.</p> 
+
+		</main>
+		<div class="container">
+  <div class="grid">
+    <div class="cell orange">
+		<img src="links/index_books.png" width="800px" class="responsive-image image" />
+		  <a href="books.html"><div class="overlay">
+			  <div class="text">Books, interiors</div></a>
+  </div>
+		</div>
+    <div class="cell orange">
+      <img src="links/index_print.png" width="800px" class="responsive-image image" />
+		  <a href="design.html"><div class="overlay">
+    <div class="text">Print, web</div></a>
+  </div>
+    </div>
+  <div class="cell orange">
+      <img src="links/index_brand.png" width="800px" class="responsive-image image" />
+		  <a href="brand.html"><div class="overlay">
+    <div class="text">Brand identity, advertising</div></a>
+  </div>
+    </div>
+  <div class="cell orange">
+      <img src="links/index_photo.png" width="800px" class="responsive-image image" />
+		  <a href="photo.html"><div class="overlay">
+    <div class="text">Photography</div></a>
+  </div>
+    </div>
+	  
+ 
+</div>
+		
+		<footer><table width="100%" border="0"><tbody>
+    <tr>
+      <td><p>Built with HTML, CSS, and a dash of Javascript; Works and <br>concepts completed between the 20th and 21st centuries.</p></td>
+		<td></td>	
+      <td align="right"><a href="rr.html"><img src="links/footer_1.png" height="24px"/></a><a href="dv.html"><img src="links/footer_2.png" height="24px"/></a></td>
+    </tr>
+  </tbody>
+</table>
+</footer>
+		
+		<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+		</script>	
+	</div>
+		</body>
+</html>

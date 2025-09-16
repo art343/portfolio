@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Type is meant to be read</title>
+	<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="links/favicon.ico?" >
+<meta name="viewport" content="width=device-width">
+<style>
+	/* BELOW : Flex css */	
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 1rem;
+}
+.responsive-image {
+  max-width: 100%;
+}
+.cell {
+  margin: .5rem;
+}	
+.cell img {
+  display: block;
+}
+/* BELOW : Flex css, Media queries */		
+@media screen and (min-width: 320px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(100% - 1rem);  }
+}
+@media screen and (min-width: 400px) {
+  .cell {
+    width: calc(50% - 1rem);	  }
+}		
+@media screen and (min-width: 800px) {
+  .cell {
+    width: calc(33.333% - 1rem);	  }
+}	
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(25% - 1rem);	  }
+}
+/* BELOW : Overlay */		
+.translucent {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.translucent:hover .image {
+  opacity: 0.3;
+} /* ABOVE: OVERLAY TRANSPRENCY */
+
+.translucent:hover .middle {
+  opacity: 1;
+} /* ABOVE: OVERLAY TEXT TRANSPRENCY */	
+
+.text {
+  font-family: "source-sans-pro", "Helvetica Neue", "sans-serif";
+  font-size: 1.5em;
+  background-color:;
+  color: #black;
+  font-size: 24px;
+  padding: 16px 32px;
+} /* ABOVE: TEXT IN THE OVERLAY */	
+	</style>
+<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header><a href="index.html"><img src="links/logo.png" height="35px" align="right"/></a></header>
+		<nav>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">So far</a>
+  <a href="books.html" class="active" style="color: white;">Books, interiors</a>
+  <a href="design.html">Print, web</a>
+  <a href="brand.html">Brand, advertising</a>	 	
+  <a href="photo.html">Photography</a>
+  <a href="contact.html">Say hello</a>					
+	
+<!--Begin Javascript -->		
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+<!--End Javascript -->	
+	</div><!--Closes the nav-->
+		</nav>
+		<div class="container">
+  <div class="grid">
+    <div class="cell translucent">
+      <a href="links/books/wound-and-suture.png" data-lightbox="gallery" data-title="Wound and Suture by W.A. Coleman"><img src="links/books/wound-and-suture.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/books/the-ventriloquists.png" data-lightbox="gallery" data-title="Ventriloquists by Dr. David Mathew"><img src="links/books/the-ventriloquists.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/books/the-librarian-at-the-end-of-the-world.png" data-lightbox="gallery" data-title="The Librarian at the End of teh World by Mark Miller"><img src="links/books/the-librarian-at-the-end-of-the-world.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/books/finding-woods.png" data-lightbox="gallery" data-title="Finding Woods by Matt Mott"><img src="links/books/finding-woods.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+	  <div class="cell translucent">
+      <a href="links/books/stay.png" data-lightbox="gallery" data-title="Stay by Zachary Amendt"><img src="links/books/stay.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/books/beyond-hercules.png" data-lightbox="gallery"data-title="Beyond Hercules by Paul A. Bussard"><img src="links/books/beyond-hercules.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/books/planetoid-sassafras.png" data-lightbox="gallery" data-title="Planetoid Sassafras by Stephanie Klein"><img src="links/books/planetoid-sassafras.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+	  	  <div class="cell translucent">
+      <a href="links/books/hollow-bible.png" data-lightbox="gallery" data-title="Hollow Bible by Conner de Bruler"><img src="links/books/hollow-bible.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+
+    <div class="cell translucent">
+      <a href="links/books/goodnight-moonflower.png" data-lightbox="gallery"data-title="Goodbye, Moonflower by Connor de Bruler"><img src="links/books/goodnight-moonflower.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/books/the-shadowed-stars.png" data-lightbox="gallery" data-title="These Shadowed Stars by Brandon Nolta"><img src="links/books/the-shadowed-stars.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+	      <div class="cell translucent">
+      <a href="links/books/the-devil-and-streak-wilson.jpg" data-lightbox="gallery" data-title="Man With Two Faces by Don Swaim"><img src="links/books/the-devil-and-streak-wilson.jpg" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+	   <div class="cell translucent">
+      <a href="links/books/gone-to-graveyards.jpg" data-lightbox="gallery" data-title="The Mountain by Matthew C. Lucas"><img src="links/books/gone-to-graveyards.jpg" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+
+  </div>
+
+<section>
+	<p>‘Brave New Pulp.’ This is the tagline for the niche publisher, <em>Montag Press.</em> The publisher’s mission is simple: Tell new stories, original fiction and drama, of the highest caliber. Montag take its name from the protagonist in Ray Bradbury’s novel, <em>Fahrenheit 451.</em> I've been designing book jackets and books for the publisher since 2012. </p>
+	<p>The jacket design is driven by the story, its themes and genre. I enjoy the visual challenge to communicate the content of the story, its themes and genre. What is the tone-of-voice of the story? Is an illustration provided? Do I need to provide art? Can the jacket be solved with just typography? What typeface best captures the story's feel? Book jackets are a medium that pushes the limits of typography and artwork to help convey the content.</p> 
+    	<p> <img src="links/GDUSAWinner-2014.jpg" width="75px" align="left" hspace="20px" vspace="7.5px">Oh, hey. I have one of these doohickeys for my effort. It was for the book <em>Stay</em>, a wonderfully-written collection of short stories centered around the town of Oakland and the baseball team, the Oakland Athletics— two things I love about the East Bay. Well, loved. The A’s are <strike>likely</strike> moving to Vegas. Fuck ‘em.</p>
+ 
+</section>
+	</div>
+		<footer><table width="100%" border="0"><tbody>
+    <tr>
+      <td><p>Built with HTML, CSS, and a dash of Javascript; Works and <br>concepts completed between the 20th and 21st centuries.</p></td>
+		<td></td>	
+      <td align="right"><a href="top5movies.html"><img src="links/footer_3.png" height="24px"/></a></td>
+    </tr>
+  </tbody>
+</table></footer>
+<!--Script below-->		
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+		</script>	
+		</div>
+	<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

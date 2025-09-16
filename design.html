@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Use a grid</title>
+	<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="links/favicon.ico?" >
+<meta name="viewport" content="width=device-width">
+<style>
+	/* BELOW : Flex css */	
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 1rem;
+}
+.responsive-image {
+  max-width: 100%;
+}
+.cell {
+  margin: .5rem;
+}	
+.cell img {
+  display: block;
+}
+.cell2 {
+  margin: .5rem;
+}	
+.cell2 img {
+  display: block;
+}	
+/* BELOW : Flex css, Media queries */		
+@media screen and (min-width: 320px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(100% - 1rem);  }
+}
+@media screen and (min-width: 400px) {
+  .cell {
+    width: calc(50% - 1rem);	  }
+}		
+@media screen and (min-width: 800px) {
+  .cell {
+    width: calc(33.333% - 1rem);	  }
+}	
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(25% - 1rem);	  }
+}
+  .cell2 {
+    width: calc(100% - 1rem);  }
+}
+@media screen and (min-width: 400px) {
+  .cell2 {
+    width: calc(50% - 1rem);	  }
+}		
+@media screen and (min-width: 800px) {
+  .cell2 {
+    width: calc(33.333% - 1rem);	  }
+}	
+@media screen and (min-width: 1000px) {
+  .cell2 {
+    width: calc(16.667% - 1rem);	  }
+}	
+/* BELOW : Overlay */		
+.translucent {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.translucent:hover .image {
+  opacity: 0.3;
+} /* ABOVE: OVERLAY TRANSPRENCY */
+
+.translucent:hover .middle {
+  opacity: 1;
+} /* ABOVE: OVERLAY TEXT TRANSPRENCY */	
+
+.text {
+  font-family: "source-sans-pro", "Helvetica Neue", "sans-serif";
+  font-size: 1.5em;
+  background-color:;
+  color: #black;
+  font-size: 24px;
+  padding: 16px 32px;
+} /* ABOVE: TEXT IN THE OVERLAY */	
+	</style>
+<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header><a href="index.html"><img src="links/logo.png" height="35px" align="right"/></a></header>
+		<nav>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">So far</a>
+  <a href="books.html">Books, interiors</a>
+  <a href="design.html" class="active" style="color: white;">Print, web</a>
+  <a href="brand.html">Brand, advertising</a>	 	
+  <a href="photo.html">Photography</a>
+  <a href="contact.html">Say hello</a>					
+	
+<!--Begin Javascript -->		
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+<!--End Javascript -->	
+	</div><!--Closes the nav-->
+		</nav>
+		<div class="container">
+  <div class="grid">
+    <div class="cell translucent">
+      <a href="links/design/acci_1_5x4.png" data-lightbox="gallery" data-title="Asian Americans for Community Involvement, annual report"><img src="links/design/acci_1_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/design/acci_3_5x4.png" data-lightbox="gallery" data-title="Asian Americans for Community Involvement, annual report"><img src="links/design/acci_3_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/design/gsdcc_1_5x4.png" data-lightbox="gallery" data-title="Greater Southern Dutchess Chamber of Commerce, covers, membership directory"><img src="links/design/gsdcc_1_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/design/gsdcc_2_5x4.png" data-lightbox="gallery" data-title="Greater Southern Dutchess Chamber of Commerce, interiors, membership directory"><img src="links/design/gsdcc_2_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+	  <div class="cell translucent">
+      <a href="links/design/vt_1_5.5x4_1.png" data-lightbox="gallery" data-title="The Valley Table, magazine"><img src="links/design/vt_1_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/design/hsu_1_5x4.png" data-lightbox="gallery"data-title="Cal Poly Humboldt, Art Department brochure, cover"><img src="links/design/hsu_1_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/design/hsu_2_5x4.png" data-lightbox="gallery" data-title="Cal Poly Humboldt, Redwood Summar Art Institute, website, identity system"><img src="links/design/hsu_2_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/design/ah_1_5x4.png" data-lightbox="gallery" data-title="The Estates at Ashby Hill, print, promotional folder"><img src="links/design/ah_1_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+	  <div class="cell translucent">
+      <a href="links/design/hsu_3_5x4.png" data-lightbox="gallery" data-title="Cal Poly Humboldt, Redwood Summar Art Institute, website, identity system"><img src="links/design/hsu_3_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/design/eo_1_5x4.png" data-lightbox="gallery"data-title="EO Media Group, publication design"><img src="links/design/eo_1_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+    <div class="cell translucent">
+      <a href="links/design/tbp_1_5x4.png" data-lightbox="AACI" data-title="The Body Perfect for Men, national advertisement in Men’s Health Magazine"><img src="links/design/tbp_1_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+	  <div class="cell translucent">
+      <a href="links/design/hsu_4_5x4.png" data-lightbox="gallery" data-title="Cal Poly Humboldt, a Wordpress-built, resource site for design students"><img src="links/design/hsu_4_1x1.png" class="image" "example-image" /></a>
+		<div class="middle">
+    <div class=""></div>
+  </div>
+    </div>
+  </div>
+
+<section>
+<p> <img src="links/GDUSAWinner-2015.jpg" width="75px" align="right" hspace="20px" vspace="5px">Concept, image, copy and layout— in any medium— are areas of interest to me. I like the challenge of having a certain amount of real estate to work with, using a grid and typography system, and make an organized, interesting page to read. It’s like Tetris: I like working with different elements to make things fit well. To this end, I've worked in publication design for books, magazines, newspapers, print and web. I’ve designed and coded websites for educational, hospital, and financial institutions.</p>
+	<p>Also, I was awarded a second Graphic Design USA Magazine award for the design of an academic brochure. It cost an absurd amount of money to enter this competition, just to confirm that the brochure came out okay. These days, client-approved and published work are validation enough for me. Save yer money, foo.</p>
+</section>
+			
+		<footer><table width="100%" border="0"><tbody>
+    <tr>
+      <td><p>Built with HTML, CSS, and a dash of Javascript; Works and <br>concepts completed between the 20th and 21st centuries.</p></td>
+		<td></td>	
+      <td align="right"><a href="singularity.html"><img src="links/footer_4.png" height="24px"/></td>
+    </tr>
+  </tbody>
+</table></footer>
+<!--Script below-->		
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+		</script>	
+		</div>
+	<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>
